@@ -30,7 +30,7 @@ public class AuthFilter implements Filter {
 	private static final String URI_AUTH_INFO = "https://rpxnow.com/api/v2/auth_info";
 	private static final String URI_LOGOUT = "/logout";
 
-	private static final String FIELD_IDENTIFIER = "identifier";
+	private static final String FIELD_PROFILE = "profile";
 	
 	private static final String PARAMETER_API_KEY = "apiKey";
 	private static final String PARAMETER_TOKEN = "token";
@@ -98,7 +98,7 @@ public class AuthFilter implements Filter {
 		String authInfoResponse = authInfo.getResponseBodyAsString();
 		try {
 			JSONObject info = new JSONObject(authInfoResponse);
-			info.getString(FIELD_IDENTIFIER);
+			info.getString(FIELD_PROFILE);
 		} catch (JSONException e) {
 			throw new AuthFailedException("Got bad result from Janbrain:\n" + authInfoResponse);
 		}
