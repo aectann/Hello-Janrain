@@ -100,7 +100,7 @@ public class AuthFilter implements Filter {
 			JSONObject info = new JSONObject(authInfoResponse);
 			info.getString(FIELD_PROFILE);
 		} catch (JSONException e) {
-			throw new AuthFailedException("Got bad result from Janbrain:\n" + authInfoResponse);
+			throw new AuthFailedException(queryString+": resulted in Got bad result from Janbrain:\n" + authInfoResponse);
 		}
 		return authInfoResponse;
 	}
