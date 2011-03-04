@@ -15,9 +15,6 @@
 </head>
 <body>
 <a class="rpxnow" onclick="return false;"
-href="https://hello-janrain.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Flocalhost%3A8080%2Fauth"> Sign In </a><br>
-<%if(request.getParameter("error") != null){%>
-<%=request.getParameter("error")%>
-<%}%>
+href="https://hello-janrain.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Flocalhost%3A8080%2Fauth"> Sign In </a>
 </body>
 </html>
