@@ -15,6 +15,6 @@
 </head>
 <body>
 <a class="rpxnow" onclick="return false;"
-href="https://hello-janrain.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Flocalhost%3A8080%2Fauth"> Sign In </a>
+href="PUT_YOUR_DOMAIN_NAME_HERE/openid/v2/signin?token_url=http%3A%2F%2Flocalhost%3A8080%2Fauth"> Sign In </a>
 </body>
 </html>
